@@ -19,5 +19,33 @@ async function quantidadeUsuariosPorRede() {
 ]
 
     const laytout = {
-        plot_bgcolor:
+        plot_bgcolor: getCSS('--bg-color'),
+        paper_bgcolor: ('--bg-color'),
+        tittle: {
+            text: 'Redes sociais com masis usuários',
+            x: 0,
+            font: {
+                color: getCSS('--primary-color'),
+                size: 30,
+                font: getCSS('--font')
+            }
+        },
+        xaxis: {
+            tickfont: tickConfig,
+            tittle: {
+                text: 'Nome das redes',
+                font: {
+                    color: getCSS('--secondary-color')
+                }
+            }
+        },
+        yaxis: {
+            tickfont: tickConfig,
+            tittle: {
+                text: 'Bilhões de usuários ativos',
+                font: {
+                    color: getCSS('--secondary-color')
+                }
+            }
+        }
 }
